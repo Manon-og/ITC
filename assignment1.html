@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <title>my assignemt</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {font-family: "Lato", sans-serif}
+             .mySlides {display: none }
+        </style>
+    
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-button" title="More">Conversion
+                </div>
+            </div>   
+        </div>
+    </div>
+    
+    <div class="w3-content" style="max-width:2000px;margin-top:46px"> 
+   <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+       
+       
+       
+       
+        <i> <p class="w3-small">Kindly insert a number that you want to convert.</p> 
+       <input id="n1" name="n1" type="number" placeholder="insert here">      
+        <p class="w3-small">Then choose how you want to convert it.</p>   
+        <p class="w3-large w3-text-red">⇩  ⇩  ⇩</p> 
+        <p class="w3-button w3-round-xxlarge w3-large w3-text-red w3-black w3-margin-bottom" onclick=ansFahrenheit()>Fahrenheit</p>  
+        <p class="w3-button w3-round-xxlarge w3-large w3-text-red w3-black w3-margin-bottom" onclick=ansCelsius()>Celsius</p>  
+        <p class="w3-button w3-round-xxlarge w3-large w3-text-red w3-black w3-margin-bottom" onclick=ansMeters()>Meters</p>  
+        <p class="w3-button w3-round-xxlarge w3-large w3-text-red w3-black w3-margin-bottom" onclick=ansFeet()>Feet</p>  
+        <p class="w3-small">keep in mind that your given number is |Celsius| if you want to convert it to Fahrenheit or |Meters| if you want to convert it to Feet and vice versa.</p> 
+    </footer> 
+        
+    <p>
+        <label for="ans" id="answer"> from_ 0 ☞ </label>
+        <input id="ans" name="ans" type="number" readonly>
+
+    <p>
+    
+<script>
+    function ansFahrenheit()
+{
+    var x,y;
+    
+    x = document.getElementById("n1").value*1;
+    y = document.getElementById("n1").value*1.8+32;
+    
+    
+    let a = y;
+    
+document.getElementById("answer").innerHTML='from_' +x+  '☞';
+    document.getElementById("ans").value=a;
+}
+</script>
+<script>
+    function ansCelsius()
+{
+    var x,y;
+    
+    x = document.getElementById("n1").value*1;
+    y =(document.getElementById("n1").value-32)/1.8;
+    
+    
+    let a = y;
+    
+document.getElementById("answer").innerHTML='from_' +x+  '☞';
+    document.getElementById("ans").value=a;
+}
+</script>
+
+<script>
+    function ansMeters()
+{
+    var x,y;
+    
+    x = document.getElementById("n1").value*1;
+    y = document.getElementById("n1").value/3.281;
+    
+    
+    let a = y;
+    
+document.getElementById("answer").innerHTML='from_' +x+  '☞';
+    document.getElementById("ans").value=a;
+}
+</script>
+
+<script>
+    function ansFeet()
+{
+    var x,y;
+    
+    x = document.getElementById("n1").value*1;
+    y = document.getElementById("n1").value*3.281;
+    
+    
+    let a = y;
+    
+document.getElementById("answer").innerHTML='from_' +x+  '☞';
+    document.getElementById("ans").value=a;
+}
+</script>
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
